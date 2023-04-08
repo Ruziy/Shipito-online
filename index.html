@@ -1,0 +1,685 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shipito</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+</head>
+<body> 
+    <div class="wrapper">
+        <header class="header">
+            <img class="header__img" src="images/header__country.png" alt="">
+            <div class="container">
+                <nav class="header__nav header__nav-open">
+                    <div class="header__logo header__logo-burger">
+                        <img class="header__logo-img" src="images/icons/logo__nav.png" alt="">
+                        <a href="#!" class="header__logo-text header__logo-text-burger">
+                            Shipito
+                        </a>
+                    </div>
+                    <ul class="header__items header__items-burger">
+                        <li class="header__item">
+                            <a class="header__link header__link-burger" href="#!">
+                                Home
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link header__link-burger" href="#!">
+                                Service
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link header__link-burger" href="#!">
+                                Location
+                            </a>
+                        </li>
+                        <li class="header__item">
+                            <a class="header__link header__link-burger" href="#!">
+                                Tracking
+                            </a>
+                        </li>
+                    </ul>
+                    <a class="header__btn header__btn-burger" href="#!" >
+                        Sign Up
+                    </a>
+                    <div class="burger active">
+                        <span></span>
+                    </div>
+                </nav>
+                <div class="header__content">
+                    <h1 class="header__title">
+                        We Do International Parcel Forwarding
+                    </h1>
+                    <div class="header__logicblock">
+                        <div class="header__buttons">
+                            <button class="header__button" data-filter=".tracking">Tracking</button>
+                            <button class="header__button" data-filter=".schedule">Schedule</button>
+                            <button class="header__button" data-filter=".officer">Local Officer</button>
+                        </div>
+                        <div class="header__inner">
+                            <div class="header__inner-item mix tracking">
+                                <div class="header__inner-number">
+                                    Tracking  number:
+                                </div>
+                                <input class="header__inner-input" type="number" placeholder="Enter the track number">
+                                <div class="header__inner-date">
+                                    Date shipped:
+                                </div>
+                                <input class="header__inner-input" type="date">
+                                <div class="header__inner-button">
+                                    <a  class="header__inner-btn" href="#!">
+                                        Track Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__inner-item mix schedule">
+                                <div class="header__inner-number">
+                                    Tracking  number:
+                                </div>
+                                <input class="header__inner-input" type="number" placeholder="Enter the track number">
+                                <div class="header__inner-date">
+                                    Date shipped:
+                                </div>
+                                <input class="header__inner-input" type="date" placeholder="Enter the date">
+                                <div class="header__inner-button">
+                                    <a  class="header__inner-btn" href="#!">
+                                        Track Now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="header__inner-item mix officer">
+                                <div class="header__inner-number">
+                                    Tracking  number:
+                                </div>
+                                <input class="header__inner-input" type="number" placeholder="Enter the track number">
+                                <div class="header__inner-date">
+                                    Date shipped:
+                                </div>
+                                <input class="header__inner-input" type="date" placeholder="Enter the date">
+                                <div class="header__inner-button">
+                                    <a  class="header__inner-btn" href="#!">
+                                        Track Now
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <main class="main">
+            <section class="ship">
+                <div class="container">
+                    <div class="ship__inner">
+                        <div class="ship__slider">
+                            <div class="ship__item first-slide">
+                                <img class="ship__img" src="images/ship-img.png" alt="">
+                            </div>
+                            <div class="ship__item">
+                                <img class="ship__img" src="images/ship-img.png" alt="">
+                            </div>
+                            <div class="ship__item">
+                                <img class="ship__img" src="images/ship-img.png" alt="">
+                            </div>
+                            <div class="ship__item">
+                                <img class="ship__img" src="images/ship-img.png" alt="">
+                            </div>
+                            <div class="ship__item" >
+                                <img class="ship__img" src="images/ship-img.png" alt="">
+                            </div>
+                        </div>
+                        <div class="ship__counter ship__counter-light"><span class="ship__counter-dark">0</span> 
+                            <span class="ship__counter-dark" id="counter">1</span>
+                            <div class="ship__line"></div>
+                            05</div>
+                    </div>
+                </div>
+            </section>
+            <section class="partners">
+                <div class="container">
+                    <ul class="partners__items">
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners__fedex-express.png" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners__DNL.png" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners__shipit.png" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners__chronopost.png" alt="">
+                        </li>
+                        <li class="partners__item">
+                            <img class="partners__img" src="images/partners/partners__chronopost-2.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+            </section>
+            <section class="choose">
+                <div class="container">
+                    <div class="choose__inner">
+                        <img class="choose__img" src="images/choose__img.png" alt="" >
+                        <div class="choose__info">
+                            <h2 class="choose__title">
+                                Why Choose Us ?
+                            </h2>
+                            <p class="choose__text">
+                                Grow your eCommerce business and reduce costs by improving delivery quality      
+                            </p>
+                            <div class="choose__infoblock">
+                                <div class="choose__infoblock-item">
+                                    <img class="choose__item-img" src="images/icons/choose__img-1.png" alt="">
+                                    <h3 class="choose__infoblock-title">
+                                        Real Time Tracking
+                                    </h3>
+                                    <p class="choose__infoblock-text">
+                                        You can check the status of the shipment in real time by ,....
+                                    </p>
+                                </div>
+                                <div class="choose__infoblock-item">
+                                    <img class="choose__item-img" src="images/icons/choose__img-2.png" alt="">
+                                    <h3 class="choose__infoblock-title">
+                                        Pickup Delivery
+                                    </h3>
+                                    <p class="choose__infoblock-text">
+                                        Our service connects your customers to fully qualified ,..
+                                    </p>
+                                </div>
+                                <div class="choose__infoblock-item">
+                                    <img class="choose__item-img" src="images/icons/choose__img-3.png" alt="">
+                                    <h3 class="choose__infoblock-title">
+                                        Insurance Service
+                                    </h3>
+                                    <p class="choose__infoblock-text">
+                                        You can check the status of the shipment in real time by ,....
+                                    </p>
+                                </div>
+                                <div class="choose__infoblock-item">
+                                    <img class="choose__item-img" src="images/icons/choose__img-4.png" alt="">
+                                    <h3 class="choose__infoblock-title">
+                                        Packaging
+                                    </h3>
+                                    <p class="choose__infoblock-text">
+                                        If you want to send a package from home or work, you’ll need to book ,..
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="delivery">
+                <img class="delivery__img delivery__img-ship" src="images/delivery-img-ship.png" alt="">
+                <img class="delivery__img delivery__img-place" src="images/delivery-img-place.png" alt="">
+                <div class="container">
+                    <h2 class="delivery__title">
+                        We Provide The Worldwide Delivery service.
+                    </h2>
+                    <p class="delivery__text">
+                        Our Services. LCL Consolidation; MCC; FCL Shipping Service; Air Freight; Trucking Services; Customs Clearance; DG Cargo Handling.
+                    </p>
+                    <div class="delivery__inner">
+                        <div class="delivery__info">
+                            <h3 class="delivery__info-title">
+                                Land Transport
+                            </h3>
+                            <p class="delivery__info-text">
+                                With a worldwide organization and progressed coordination arrangements, our airship cargo sending items.
+                            </p>
+                            <span>
+                                <img class="delivery__info-icon" src="images/icons/check-circle.svg" alt="">
+                                <p class="delivery__info-checkText">Part & Full Loads</p>
+                            </span>
+                            <span>
+                                <img class="delivery__info-icon" src="images/icons/check-circle.svg" alt="">
+                                <p class="delivery__info-checkText">Multimodal Solutions</p>
+                            </span>
+                            <span>
+                                <img class="delivery__info-icon" src="images/icons/check-circle.svg" alt="">
+                                <p class="delivery__info-checkText">Intermodal Solutions</p>
+                            </span>
+                            <div class="delivery__info-btn">
+                                <a class="delivery__info-link" href="#!" >
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <img class="delivery__inner-img" src="images/delivery__inner-img-1.png" alt=""> 
+                        <img class="delivery__inner-img" src="images/delivery__inner-img-2.png" alt="">
+                        <div class="delivery__info">
+                            <h3 class="delivery__info-title">
+                                Air Freight
+                            </h3>
+                            <p class="delivery__info-text">
+                                We help transport your load anyplace on the planet, making your business run easily regardless of where 
+                            </p>
+                            <span>
+                                <img class="delivery__info-icon" src="images/icons/check-circle.svg" alt="">
+                                <p class="delivery__info-checkText">General Air Freight Products</p>
+                            </span>
+                            <span>
+                                <img class="delivery__info-icon" src="images/icons/check-circle.svg" alt="">
+                                <p class="delivery__info-checkText">Charter Services</p>
+                            </span>
+                            <span>
+                                <img class="delivery__info-icon" src="images/icons/check-circle.svg" alt="">
+                                <p class="delivery__info-checkText">Intermodal Solutions</p>
+                            </span>
+                            <div class="delivery__info-btn">
+                                <a class="delivery__info-link" href="#!" >
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <div class="delivery__info">
+                            <h3 class="delivery__info-title">
+                                Ocean Freight
+                            </h3>
+                            <p class="delivery__info-text">
+                                Scale your supply chain operation to keep up with fluctuating demand, gain end-to-end visibility, and lower
+                            </p>
+                            <span>
+                                <img class="delivery__info-icon" src="images/icons/check-circle.svg" alt="">
+                                <p class="delivery__info-checkText">Less-than-container Load</p>
+                            </span>
+                            <span>
+                                <img class="delivery__info-icon" src="images/icons/check-circle.svg" alt="">
+                                <p class="delivery__info-checkText">Full Container Load</p>
+                            </span>
+                            <span>
+                                <img class="delivery__info-icon" src="images/icons/check-circle.svg" alt="">
+                                <p class="delivery__info-checkText">Intermodal Solutions</p>
+                            </span>
+                            <div class="delivery__info-btn">
+                                <a class="delivery__info-link" href="#!" >
+                                    Read More
+                                </a>
+                            </div>
+                        </div>
+                        <img class="delivery__inner-img" src="images/delivery__inner-img-3.png" alt="">
+                    </div>
+                </div>
+            </section>
+            <section class="worldwide">
+                <div class="container">
+                    <h2 class="worldwide__title">
+                        Our ofices Are spread Throughout worldwide
+                    </h2>
+                    <img class="worldwide__img-bg" src="images/worldwide-bg.png" alt="" >
+                    <div class="worldwide__inner">
+                        <button class="worldwide__btn worldwide__btn-1">
+                            <img class="worldwide__img-place worldwide__img-place-1" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <button class="worldwide__btn worldwide__btn-2">
+                            <img class="worldwide__img-place worldwide__img-place-2" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <button class="worldwide__btn worldwide__btn-3">
+                            <img class="worldwide__img-place worldwide__img-place-3" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <button class="worldwide__btn worldwide__btn-4">
+                            <img class="worldwide__img-place worldwide__img-place-4" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <button class="worldwide__btn worldwide__btn-5">
+                            <img class="worldwide__img-place worldwide__img-place-5" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <button class="worldwide__btn worldwide__btn-6">
+                            <img class="worldwide__img-place worldwide__img-place-6" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <button class="worldwide__btn worldwide__btn-7">
+                            <img class="worldwide__img-place worldwide__img-place-7" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <button class="worldwide__btn worldwide__btn-8">
+                            <img class="worldwide__img-place worldwide__img-place-8" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <button class="worldwide__btn worldwide__btn-9">
+                            <img class="worldwide__img-place worldwide__img-place-9" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <button class="worldwide__btn worldwide__btn-10">
+                            <img class="worldwide__img-place worldwide__img-place-active" src="images/icons/map-pin.png" alt="">
+                        </button>
+                        <div class="worldwide__block worldwide__block-1 worldwide__block-active">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                        <div class="worldwide__block worldwide__block-2">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                        <div class="worldwide__block worldwide__block-3">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                        <div class="worldwide__block worldwide__block-4">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                        <div class="worldwide__block worldwide__block-5">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                        <div class="worldwide__block worldwide__block-6">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                        <div class="worldwide__block worldwide__block-7">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                        <div class="worldwide__block worldwide__block-8">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                        <div class="worldwide__block worldwide__block-9">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                        <div class="worldwide__block worldwide__block-10">
+                            <div class="worldwide__block-triag"></div>
+                            <h3 class="worldwide__block-title">
+                                Treke Ofice Georgia 
+                            </h3>
+                            <p class="worldwide__block-text">
+                                Georgia,300 Nl Street 
+                            </p>
+                            <button class="worldwide__block-btn">
+                                <a class="worldwide__block-link" href="#!">
+                                    Visit Office
+                                </a>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="worldwide__infoblock">
+                        <div class="worldwide__infoblock-item">
+                            <div class="worldwide__infoblock-num">
+                                1.649+
+                            </div>
+                            <p class="worldwide__infoblock-text">
+                                Happy Sellers
+                            </p>
+                        </div>
+                        <div class="worldwide__infoblock-item">
+                            <div class="worldwide__infoblock-num">
+                                31.649+
+                            </div>
+                            <p class="worldwide__infoblock-text">
+                                Shipments Daaily
+                            </p>
+                        </div>
+                        <div class="worldwide__infoblock-item">
+                            <div class="worldwide__infoblock-num">
+                                35.000
+                            </div>
+                            <p class="worldwide__infoblock-text">
+                                Pin Codes Covered
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-us">
+                <div class="container">
+                    <h2 class="about-us__title">
+                        What People Say About Us.
+                    </h2>
+                    <div class="about-us__slider">
+                        <div class="about-us__item">
+                            <img class="about-us__img" src="images/about-us__img.png" alt="">
+                            <div class="about-us__infoblock">
+                                <img class="about-us__tegs" src="images/icons/about-us__tegs.svg" alt="" >
+                                <p class="about-us__text">
+                                    I have been doing business with Shipito International Cargo Service for a couple of years. We send an antifreeze type solution to China for various construction projects. Shipito International Cargo Service takes every,.. 
+                                </p>
+                                <div class="about-us__name">
+                                    Elizabeth Pineda
+                                </div>
+                                <div class="about-us__place">
+                                    Logistics Polymers, LP
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-us__item">
+                            <img class="about-us__img" src="images/about-us__img.png" alt="">
+                            <div class="about-us__infoblock">
+                                <img class="about-us__tegs" src="images/icons/about-us__tegs.svg" alt="" >
+                                <p class="about-us__text">
+                                    I have been doing business with Shipito International Cargo Service for a couple of years. We send an antifreeze type solution to China for various construction projects. Shipito International Cargo Service takes every,.. 
+                                </p>
+                                <div class="about-us__name">
+                                    Elizabeth Pineda
+                                </div>
+                                <div class="about-us__place">
+                                    Logistics Polymers, LP
+                                </div>
+                            </div>
+                        </div>
+                        <div class="about-us__item">
+                            <img class="about-us__img" src="images/about-us__img.png" alt="">
+                            <div class="about-us__infoblock">
+                                <img class="about-us__tegs" src="images/icons/about-us__tegs.svg" alt="" >
+                                <p class="about-us__text">
+                                    I have been doing business with Shipito International Cargo Service for a couple of years. We send an antifreeze type solution to China for various construction projects. Shipito International Cargo Service takes every,.. 
+                                </p>
+                                <div class="about-us__name">
+                                    Elizabeth Pineda
+                                </div>
+                                <div class="about-us__place">
+                                    Logistics Polymers, LP
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer__inner">
+                    <div class="footer__leftpath">
+                        <a href="" class="footer__logo-link">
+                            <img class="footer__logo" src="images/icons/footer__logo.png" alt="">
+                            Shipito
+                        </a>
+                        <p class="footer__text">
+                            Providing affordable services - our core business
+                        </p>
+                        <div class="footer__social">
+                            <a class="footer__social" href="#!">
+                                <img class="footer__social-link" src="images/icons/footer__in.png" alt="">
+                            </a>
+                            <a class="footer__social" href="#!">
+                                <img class="footer__social-link" src="images/icons/footer__facebook.png" alt="">
+                            </a>
+                            <a class="footer__social" href="#!">
+                                <img class="footer__social-link" src="images/icons/footer__twitter.png" alt="">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer__rightpath">
+                        <div class="footer__lists">
+                        <ul class="footer__items">
+                            <h3 class="footer__title">
+                                Company
+                            </h3>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    About us     
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    Contact
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    Career
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    Blog
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer__items">
+                            <h3 class="footer__title">
+                                Support
+                            </h3>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    Website
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    Email
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    Whatsapp
+                                </a>
+                            </li>
+                        </ul>
+                        <ul class="footer__items footer__items-contact">
+                            <h3 class="footer__title">
+                                Contact Us
+                            </h3>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    FAQ
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    Booking
+                                </a>
+                            </li>
+                            <li class="footer__item">
+                                <a class="footer__link" href="#!">
+                                    Store
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                        <div class="footer__forms">
+                            <h3 class="footer__title footer__title-forms">
+                                Join Our Newsletter
+                            </h3>
+                            <div class="footer__inputblock">
+                                <input class="footer__inputblock-input" type="email" placeholder="Your email address">
+                                <button class="footer__inputblock-btn">
+                                    <a href="#!" class="footer__inputblock-link">SEND</a>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="footer__copyright">
+                    <div class="footer__line">
+                        
+                    </div>
+                    2022 Shipito.All Right Reserved
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script src="js/main.min.js"></script>
+</body>
+</html>
